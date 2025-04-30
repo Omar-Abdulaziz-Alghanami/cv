@@ -1,99 +1,138 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>السيرة الذاتية - طالب</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume - Omar Abdulaziz Alghalami</title>
   <style>
     body {
-      font-family: 'Tahoma', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #121212;
       color: #f0f0f0;
       margin: 0;
       padding: 0;
     }
+
     .container {
       max-width: 800px;
       margin: 40px auto;
       background-color: #1e1e1e;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+      animation: fadeIn 1s ease-in-out;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     .header {
       text-align: center;
       margin-bottom: 30px;
     }
+
     .header h1 {
       margin: 0;
+      font-size: 2.5em;
       color: #ffffff;
     }
+
+    .header p {
+      font-size: 1.1em;
+      color: #aaa;
+    }
+
     .section {
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
+
     .section h2 {
-      border-right: 5px solid #00aaff;
-      padding-right: 10px;
+      border-left: 5px solid #00aaff;
+      padding-left: 10px;
       color: #00aaff;
+      margin-bottom: 15px;
     }
+
     ul {
       list-style: none;
       padding: 0;
     }
+
     ul li::before {
-      content: "• ";
+      content: "● ";
+      font-size: 18px;
       color: #00aaff;
-      margin-left: 5px;
+      margin-right: 6px;
     }
-    .highlight {
-      color: #ffd700; /* أصفر */
-      font-weight: bold;
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #FFD700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="header">
-      <h1 class="highlight">اكتب اسمك هنا</h1>
-      <p class="highlight">طالب جامعي - اكتب تخصصك هنا</p>
-      <p class="highlight">بريد إلكتروني: your@email.com | جوال: 05XXXXXXXX</p>
+      <h1>Omar Abdulaziz Alghalami</h1>
+      <p>Computer Information Systems Student - Shaqra University</p>
+      <p>Email: omar111azez@gmail.com | Phone: 0507148135</p>
     </div>
 
     <div class="section">
-      <h2>نبذة شخصية</h2>
-      <p>أنا طالب في مرحلة البكالوريوس أطمح لتطوير مهاراتي في مجال التقنية واكتساب خبرة عملية من خلال التدريب والمشاريع.</p>
+      <h2>About Me</h2>
+      <p>I’m a passionate university student eager to learn and grow in the tech field. I’m seeking opportunities to develop my skills and gain practical experience through internships and personal projects.</p>
     </div>
 
     <div class="section">
-      <h2>التعليم</h2>
+      <h2>Education</h2>
       <ul>
-        <li class="highlight">بكالوريوس - اكتب تخصصك (مثلاً: نظم معلومات حاسب) - اسم الجامعة - التاريخ المتوقع للتخرج</li>
+        <li>Bachelor’s Degree in Computer Information Systems – Shaqra University – Expected Graduation: 2027</li>
       </ul>
     </div>
 
     <div class="section">
-      <h2>المهارات</h2>
+      <h2>Skills</h2>
       <ul>
-        <li>HTML و CSS</li>
+        <li>HTML & CSS</li>
         <li>Visual Studio Code</li>
-        <li>Git و GitHub</li>
+        <li>Git & GitHub</li>
+        <li>Basic JavaScript</li>
       </ul>
     </div>
 
     <div class="section">
-      <h2>المشاريع أو الأنشطة</h2>
+      <h2>Projects & Activities</h2>
       <ul>
-        <li class="highlight">اكتب اسم مشروعك أو أي مشاركة مميزة</li>
-        <li>مشاركة في هاكاثون الجامعة</li>
+        <li>Personal Website using HTML/CSS</li>
       </ul>
     </div>
 
     <div class="section">
-      <h2>اللغات</h2>
+      <h2>Languages</h2>
       <ul>
-        <li>العربية: ممتاز</li>
-        <li>الإنجليزية: جيد</li>
+        <li>Arabic: Native</li>
+        <li>English: Good</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Links</h2>
+      <ul>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/omar-azez-060666346?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+          https://www.linkedin.com/in/omar-azez-060666346</a></li>
       </ul>
     </div>
   </div>
 </body>
+</html>
